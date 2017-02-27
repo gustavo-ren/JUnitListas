@@ -31,6 +31,9 @@ public class HandleListTest {
     public void setUp() {
         lista=new TesteLista();
         item=new HandleList();
+        
+        System.out.println(lista);
+        System.out.println(item);
     }
     
     @After
@@ -40,10 +43,7 @@ public class HandleListTest {
 
     @Test
         public void deveRetornar0() {
-        
-        int retorno=item.retornaMaior(lista);
-        
-        assertEquals(0, retorno);
+        assertEquals(0, item.retornaMaior(lista));
     }
     
     @Test
